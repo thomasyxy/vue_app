@@ -1,0 +1,12 @@
+
+
+@import './rem.scss';
+
+@mixin global-font () {
+    font-family: 'Trebuchet MS', Arial, 'Lucida Grande', Verdana, Lucida, Helvetica, sans-serif;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
