@@ -36,9 +36,9 @@ if(typeof window === 'undefined'){
 
       rem = docWidth / 10;
 
-      /ZTE U930_TD/.test(navigator.userAgent) && rem = rem * 1.13;
+      /ZTE U930_TD/.test(navigator.userAgent) && (rem = rem * 1.13);
 
-      /Android\s+4\.4\.4;\s+M351\s/.test(navigator.userAgent) && rem = rem / 1.05;
+      /Android\s+4\.4\.4;\s+M351\s/.test(navigator.userAgent) && (rem = rem / 1.05);
 
       fontEl.innerHTML = 'html{font-size:' + rem + 'px!important;}body{' + extraStyle;
 
