@@ -1,8 +1,8 @@
 {
   "apps" : [
     {
-      "name"      : "hexo",
-      "script"    : "hexo.sh",
+      "name"      : "vue_app",
+      "script"    : "build/dev-server.js",
       "env": {
         "COMMON_VARIABLE": "true"
       },
@@ -18,7 +18,7 @@
       "ref"  : "origin/master",
       "repo" : "git@github.com:thomasyxy/vue_app.git",
       "path" : "/alidata/www/vue_app",
-      "post-deploy" : "bash /alidata/www/blog/current/deploy.sh"
+      "post-deploy" : "bash /alidata/www/vue_app/current/deploy.sh"
     }
   }
 }

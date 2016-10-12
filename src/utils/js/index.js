@@ -7,7 +7,7 @@ function isLocal(){
 
 function getUrlParam(name){
   const params = QueryString.parse(location.search);
-  return type name === 'undefined' ? undefined : params[name]
+  return (type name === 'undefined') ? undefined : params[name]
 }
 
 export {
