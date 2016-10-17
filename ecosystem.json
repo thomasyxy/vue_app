@@ -2,7 +2,7 @@
   "apps" : [
     {
       "name"      : "vue_app",
-      "script"    : "build/prod-server.js",
+      "script"    : "build/build.js",
       "env": {
         "COMMON_VARIABLE": "true"
       },
