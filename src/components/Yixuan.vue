@@ -1,14 +1,16 @@
-<template>
-  <div class="yixuan">
-    <h1>{{ msg }}</h1>
-  </div>
+<template lang="jade">
+  div.yixuan
+    h1 {{ msg }}
+    input(type="text" v-model="number" debounce="500")
+    p {{number}}
 </template>
 
 <script>
 export default {
   data () {
     return {
-      msg: 'Yixuan'
+      msg: 'Yixuan',
+      number: 123
     }
   }
 }
