@@ -38,7 +38,7 @@ webpack(webpackConfig, function (err, stats) {
 })
 
 
-var port = 8001;
+var port = 7002;
 var uri = 'http://127.0.0.1:' + port
 
 var app = express();
