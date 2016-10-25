@@ -1,0 +1,26 @@
+{
+  "nav": [
+    {
+      "name": "home",
+      "title": "Home",
+      "params": {
+        "msg": 123
+      }
+    },{
+      "name": "yixuan",
+      "title": "yixuan"
+    },{
+      "name": "page1",
+      "title": "page1"
+    },{
+      "name": "page2",
+      "title": "page2"
+    },{
+      "name": "page3",
+      "title": "page3"
+    },{
+      "name": "page3",
+      "title": "page4"
+    }
+  ]
+}

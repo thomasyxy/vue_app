@@ -16,5 +16,4 @@ export default {
 
 <style lang="sass">
 @import './scss/main.scss'
-@import './utils/scss/index.scss'
 </style>

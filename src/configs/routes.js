@@ -3,10 +3,12 @@ export default function (section) {
     global: [
       {
         path: '/home',
+        name: 'home',
         component: require('../components/Home')
       },
       {
         path: '/yixuan',
+        name: 'yixuan',
         component: require('../components/Yixuan')
       }
     ]
