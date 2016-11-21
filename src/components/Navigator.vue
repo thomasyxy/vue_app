@@ -1,10 +1,14 @@
 <template lang="jade">
   div#focus-ease-navigator.main-nav
-    ul.focus-ease-list
-      - var navList = [{name: "home", title: "Home", params: { msg: 123 }},{name: "yixuan", title: "yixuan"},{name: "page1", title: "page1"},{name: "page2", title: "page2"},{name: "page3", title: "page3"},{name: "page3", title: "page4"}]
-      - each item, index in navList
-        li.focus-ease-item
-          router-link(:to="{ name: '#{item.name}', params: '!{item.params}' }") #{item.title}
+    el-button(type="primary") 默认按钮
+    el-menu(theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect")
+      el-menu-item(index="1") 处理中心
+      el-submenu(index="2")
+        template(slot="title") 我的工作台
+          el-menu-item(index="2-1") 选项1
+          el-menu-item(index="2-2") 选项2
+          el-menu-item(index="2-3") 选项3
+      el-menu-item(index="3") 订单管理
 </template>
 
 <script>
@@ -15,7 +19,9 @@ export default {
   computed: {},
   mounted () {},
   methods: {
-
+    handleSelect (key, keyPath) {
+      console.log(key, keyPath)
+    }
   },
   components: {}
 }
