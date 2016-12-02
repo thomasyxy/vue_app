@@ -3,12 +3,15 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
+
 import App from './App'
 import configRoutes from './configs/routes'
 import '../theme/index.css'
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 const router = new VueRouter({
   routes: configRoutes('global')
