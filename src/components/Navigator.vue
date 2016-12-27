@@ -2,7 +2,7 @@
   div#focus-ease-navigator.main-nav
     el-menu(default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect")
       el-menu-item(index="1")
-        router-link(:to="{ name: '#' }")处理中心
+        router-link(:to="{ name: '#' }") 处理中心
       el-submenu(index="2")
         template(slot="title") 我的工作台
         el-menu-item(index="2-1") 选项1

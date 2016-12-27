@@ -31,7 +31,7 @@ node --debug app.js
 # deploy with pm2 after commit to github
 pm2 deploy production
 
-# if first deploy project to server, please add `setup` param
+# if first deploy project to server, please add `setup` param before deploy
 pm2 deploy production setup
 ```
 
