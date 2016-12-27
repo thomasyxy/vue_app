@@ -13,9 +13,7 @@ export default {
   },
   created () {
     this.$http.get('http://www.yinxueyuan.com/vueapp/normal', {}, {
-      headers: {
-        'Access-Control-Allow-Origin': 'http://www.yinxueyuan.com'
-      }
+      headers: {}
     }).then(function (res) {
       console.log(res.data)
     }, function (res) {
