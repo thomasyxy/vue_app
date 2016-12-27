@@ -11,12 +11,26 @@ export default {
   data () {
     return {}
   },
+  created () {
+    this.$http.get('http://www.yinxueyuan.com/vueapp/normal', {}, {
+      headers: {
+        'Access-Control-Allow-Origin': 'http://www.yinxueyuan.com'
+      }
+    }).then(function (res) {
+      console.log(res.data)
+    }, function (res) {
+      console.log(res)
+    })
+  },
   mounted () {
     this.$http.jsonp('http://www.yinxueyuan.com/vueapp/jsonp?callback=hello', {}, {
       headers: {},
       emulateJSON: true
     }).then(function (res) {
-      this.initData = res.data
+      function hello (data) {
+        console.log(data)
+      }
+      alert(res)
     }, function (res) {
       console.log(res)
     })
