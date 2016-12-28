@@ -12,8 +12,10 @@ export default {
     return {}
   },
   created () {
-    this.$http.get('http://www.yinxueyuan.com/vueapp/normal', {}, {
-      headers: {}
+    this.$http({
+      url: 'http://www.yinxueyuan.com/vueapp/normal',
+      type: 'get',
+      dataType: 'jsonp'
     }).then(function (res) {
       console.log(res.data)
     }, function (res) {
